@@ -1,0 +1,1 @@
+# Cairo Taylor, Variables Notes
