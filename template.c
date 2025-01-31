@@ -9,6 +9,6 @@ int main(void){
     printf("%d\n", num);
     printf("%f\n", pi);
     printf("How are you doing today, %s? \n", name);
-    printf("Hello, my name is %s, I am %d years old, and my favorite number is %f. \n", name, num, pi)
+    printf("Hello, my name is %s, I am %d years old, and my favorite number is %f. \n", name, num, pi);
     return 0;
 }
