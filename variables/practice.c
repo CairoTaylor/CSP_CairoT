@@ -1,4 +1,4 @@
-//Cairo Taylor, Template
+//Cairo Taylor, Variables Practice
 #include <stdio.h>
 
 
