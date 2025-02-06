@@ -1,8 +1,10 @@
 #include <stdio.h>
 
+char name
+
 int main(void){
   printf("What is your name?: \n");
-  scanf("%d", &myNum);
-  printf("Hello, %d", \n) 
+  scanf("%d", name);
+  printf("Hello, %d\n", name) 
     return 0;
 }

@@ -1,3 +1,4 @@
+//Cairo Taylor, Variables Practice
 #include <stdio.h>
 
 char name[] = "Cairo";

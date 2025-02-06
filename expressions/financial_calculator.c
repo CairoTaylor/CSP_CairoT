@@ -1,4 +1,4 @@
-//Cairo Taylor, Variables Practice
+//Cairo Taylor, Financial Calculator
 #include <stdio.h>
 
 
