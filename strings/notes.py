@@ -11,3 +11,9 @@ print (f"You have a bad name, {name}.")
 num = input("Give me a number.\n")
 
 challenge = input("Do you wish to challenge me?\n")
+print(challenge.find("yes"))
+
+oogles = "I'm Mr. King Dice, I'm the gamest in the land."
+chunk = oogles.find("King Dice")
+print(oogles[chunk:chunk+9])
+print(f"Are you {name}? I think {name} is very cool.")
