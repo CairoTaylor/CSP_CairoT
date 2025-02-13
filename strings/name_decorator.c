@@ -2,15 +2,18 @@
 #include <stdio.h>
 #include <string.h>
 
-char name[30];
+char name[20];
 
 int main(void){
 printf("What is your name?\n");
-fgets(name, 30, stdin);
-char decor1[] = "o-[---- ";
-char decor2[] = " ----]-o";
-strcat(decor1, name);
-strcat(decor1, name, decor2);
-printf(decor1);
+fgets(name, 20, stdin);
+name[strcspn(name, "\n")] = 0;
+char decorl[] = "o-[---- ";
+char decorr[] = " ----]-o";
+char decorated[40];
+strcpy(decorated, decorl);
+strcat(decorated, name);
+strcat(decorated, decorr);
+printf("%s\n", decorated);
     return 0;
 }
