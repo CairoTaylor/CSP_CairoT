@@ -1,0 +1,13 @@
+# Cairo Taylor, Silly Sentences
+guy = input("What is your male character's name?\n")
+game = input("What is his favorite game?\n")
+exclamation = input("What is your character's favorite saying?\n")
+song = input("What is your favorite song?\n")
+number = input("What is the year of your favorite historical event?\n")
+verb = input("What is a cool verb?\n")
+bom = input("What is your favorite kind of explosive device?\n")
+time = input("What time do you get home every day?\n")
+item = input("What is your character's favorite item?\n")
+verbed = input("What is a cool past tense verb?\n")
+verbing = input("What is a present tense verb?\n")
+print(f"Once upon a time, {guy} decided that he was going to go play {game} because he likes to. When he arrived at the {game} store, he yelled '{exclamation}', because everything was {number}% off! He {verb} up to the shelves and grabbed everything, singing '{song}' the whole time. Just when it was {time}, {guy} figured that he should take his loot and go home. However, when he got home, he realized he had lost his {item}! Again, he exclaimed '{exclamation}', but angrier. {guy} {verbed} back to the {game} store, yet again shouting '{exclamation}', but at the store owner. 'Can I help you sir?', the owner asked. '{exclamation}', {guy} shouted again. 'I seem to have lost my {item}. Could I have it back?' {guy} said. 'Ah,' the owner said, 'you mean THIS {item}? I'll give it to you, but only for ${number}!' Angrily, {guy} used his biggest {bom} and blew up the {game} store. When the owner crawled out of the rubble, {guy} yelled '{exclamation}' yet again, before {verbing} the owner in the face.")
