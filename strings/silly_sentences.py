@@ -1,5 +1,5 @@
 # Cairo Taylor, Silly Sentences
-guy = input("What is your male character's name?\n")
+guy = input("What is your male character's name?\n").capitalize()
 game = input("What is his favorite game?\n")
 exclamation = input("What is your character's favorite saying?\n")
 song = input("What is your favorite song?\n")
