@@ -19,5 +19,5 @@ int main(void){
    input("verb", 50);
    input("place", 50);
    printf("%s was %s until they somehow reached %s", input("name", 50), input("verb", 50), input("place", 50));
-    return 0;
+   return 0;
 }
