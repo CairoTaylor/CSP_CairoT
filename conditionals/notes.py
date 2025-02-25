@@ -3,7 +3,10 @@
 print("Hello and welcome to my program that will sort you into a category.")
 
 name = input("What is your name?\n").strip().capitalize()
-if name == "Cairo":
+
+if name == "Terhg":
+    print("You have the best name in the entire universe.")
+elif name == "Cairo":
     print("All hail the creator...")
 else:
     print("You fall under the category of: stupid.")
@@ -25,7 +28,14 @@ if "a" in name:
 else:
     print("Your name doesn't have an a in it.")
 
-if "a" in name or "e" in name or "i" in name or "o" in name or "u" in name:
+if name == "Terhg":
+    print("You have the best name in any universe")
+elif "a" in name or "e" in name or "i" in name or "o" in name or "u" in name:
     print("CONGRATULATIONS! YOUR NAME IS REGULAR AND HAS A VOWEL!")
 else:
     print("Wtf is wrong with your name it has no vowels.")
+
+if "J" and "I" in name:
+    print("You have a J and an I in your name, which is pretty crazy ngl.")
+else:
+    print("You don't got a J and an I in your name.")
