@@ -14,8 +14,17 @@ int main(void){
     int hour = tm_struct->tm_hour;
 
 if(hour == 12){
-    
+    printf("It's noontime!");
+}else if(hour >= 2 && hour < 6){
+    printf("Dawn is upon you! You sure do get up early!");
+}else if(hour >= 6 && hour < 12){
+    printf("Good Morning!");
+}else if(hour >= 12 && hour < 20){
+    printf("Good evening!");
+}else if(hour >= 20 && hour < 22){
+    printf("It's getting late!");
+}else{
+    printf("Go to sleep, it's nighttime.");
 }
-
     return 0;
 }
