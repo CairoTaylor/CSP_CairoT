@@ -94,7 +94,8 @@ X**X%*X*****X*%%%%XX%*=XXXX**********++++++***+++++++++*+-.......
 X*XX*********XXXX%%%*+XX**+*****+++++++**+++++++****+++*=........                                                                                                              
 XX*XXXX**X%%XXXXX%%X+XXXXX*******+++++++++++*******++*+=........."""
 
-
+print("NOTE: If the program isn't running correctly, restart it a few times.")
+print("You wake up in a large cage above lava.")
 firstpick = split("Go down hamster tube slide", "Jump across the glass bridge(1 in 33554432 success)")                        #this code forms the main structure/plot of the game and was a collaboration between james and cairo
 frstchoice = int(input("1 or 2:\n"))
 if frstchoice == 1:
@@ -217,6 +218,9 @@ if frstchoice == 1:
                  if lsa == "Yes":
                     print("The floor starts opening up in the middle. You try to pull the lever back, but the lever snaps. You fall into the lava")
                     print(dedend)
+                 else:
+                    print("You don't pull the lever, and a door opens.")
+                    print(sneakend)
              
           else:            # these 17 lines were written by james
               print("You decide to continue past them, and run past all the cells. After a few minutes of running, you find yourself exhausted. You also observe that you made it onto a bridge above the lava.")
