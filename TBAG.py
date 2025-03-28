@@ -1,11 +1,30 @@
 # Cairo Taylor and James Wilcox , Text-Based Adventure Game
 import random
-def shadfiht(action, location1, location2):
-    move = input("Where do you plan to {action}?")
-    answer = int(input("1 is {location1}, 2 is {location2}."))
+def battle(creature, action, location1, location2):
+    print(f"The {creature}, positioned in front of you, is ready to strike!")
+    print(f"1 is {location1}, 2 is {location2}.")
+    move = input(f"Where do you plan to {action}?\n")
+    if slingshot == "Yes":
+        defense = random.randint(1,2)
+    else:
+        defense = random.randint(1,5)
+    if defense == move:
+        print(f"The {creature} predicted your move!")
+        print(dedend)
+    else:
+        print(f"You surprised the {creature} and it fled!")
+
+
+
 
 def split(choice1, choice2):
    print(f"You see 2 pathways that you could take. Do you want to: \n1. {choice1},\nOR\n2. {choice2}?")
+
+
+
+
+
+
 
 
 befriend = "You managed to befriend the bird! You managed to get the best ending."
@@ -13,11 +32,17 @@ sneakend = "You manage to sneak to the surface world and not get eaten. Congratu
 dedend = "You failed to escape! You got the worst ending."
 
 
+
+
+
+
+
+
 firstpick = split("Go down hamster tube slide", "Jump across the glass bridge(1 in 33554432 success)")
 frstchoice = int(input("1 or 2:\n"))
 if frstchoice == 1:
    print("You decide to go down the hamster tube slide.")
-   slingshot = input("At the bottom, you see a tiny slingshot. Do you pick it up?\n").capitalize()
+   slingshot = input("At the bottom, you see a tiny slingshot and a bag of tough seeds. Do you pick it up?\n").capitalize()
    if slingshot == "Yes":
        print("You now have a slingshot!")
    else:
@@ -37,7 +62,7 @@ if frstchoice == 1:
                thirdpick = split("Go down the flame-lit tunnel", "Crawl through the grate system")
                thrdchoice = int(input("1 or 2:\n"))
                if thrdchoice == 1:
-                   print("You decide to go down the flame lit tunnel. You see a figure by the fire. It is tall and skinny, but you can only see the silouette. It turns its head at you, revealing luminous red eyes.")
+                   print("You decide to go down the flame lit tunnel. You see a figure by the fire. It is tall and skinny, but you can only see the silouette. It turns its head at you, revealing luminous red eyes.\nIt comes after you!")
                    # Battle Sequence and sneak escape if victory
                else:
                    print("Deciding that the flame is a little suspicious, you decide to crawl into the sewer grate and sneak below the sewer.\nYou close the sewer grate with a slam. A sound of surprise comes from near the fire, followed by a noise like a snake hissing, and then wet footsteps coming in your direction.")
@@ -45,25 +70,18 @@ if frstchoice == 1:
                    frthchoice = int(input("1 or 2:\n"))
                    if frthchoice == 1:
                        print("You decide that this entity will be anything but friendly, and that solving the puzzle will be best for you.")
-                       attempt = int(0)
-                       puzzle2 = 1
-                       result = input("I am something people either celebrate or resist. I change people’s thoughts and lives. I am obvious to some people but, to others, I am a mystery. What am I?\n").capitalize()
-                       while puzzle2 == 1:
-                          if result == "Age" and attempt <= 4:
+                       puzzle2 = "Yes"
+                       while puzzle2 == "Yes":
+                        result = input("I am something people either celebrate or resist. I change people’s thoughts and lives. I am obvious to some people but, to others, I am a mystery. What am I?\n").capitalize()
+                        if result == "Age":
+                            puzzle2 = 0
                             print("The door opens.")
-                            print(sneakend)
-                          else:
-                            attempt += 1
-                            print(f"That is incorrect. {3 - attempt} tries left")
                             break
+                        else:
+                            print(f"That is incorrect.")
                        print("You hear something lurking behind you...")
-                       fight1 = shadfiht("swing", "Head", "legs")
-                       defense = random.randint(1,2)
-                       if defense == fight1:
-                           print("The Shadow Man predicted your move!")
-                           print(dedend)
-                       else:
-                           print("You surprised the Shadow Man and he fled!")
+                       shadowman = battle("Shadow Man", "swing", "Head", "legs")
+                       
                    else:
                        print("You decide that this entity is not intelligent enough to find you in the grate and will pass overhead.\nSuddenly, you see the creature to be a very tall and lanky shadow figure with luminous red eyes. It wraps its arm tentacles around you and you start to choke.")
                        choke = random.randint(1,10)
@@ -74,12 +92,45 @@ if frstchoice == 1:
                        else:
                            print("The creature's grip strengthens. In one last desperate attempt to escape, you kick it in the leg, but your leg passes though it.")
                            print(dedend)
-                      
+                     
            else:
                print("No, that is incorrect.")
-      
+     
    else:
-       print("Because the sewer sounds a little unsafe(or nasty), you decide to keep walking alongside the dungeon.")
+       print("Because the sewer sounds a little unsafe(or nasty), you decide to keep walking alongside the dungeon. You hear noises coming from each of the cells in the dungeon.")
+       scndpick = split("Check out the other dungeon cells", "Walk past them")
+       secondchoice = int(input("1 or 2:\n"))
+       if secondchoice == 1:
+           print("You decide that you want to see what is in the other cells of this dungeon. You walk by the cells and see nothing in them. Confused, you start thinking of something.")
+           thrdpick = split("Look closer at the cells", "Ignore them")
+           thirdchoice = int(input("1 or 2:\n"))
+           if thirdchoice == 1:
+               print("A blurry figure seems to materialize. It looks like an old man in chains looking away from you.\n")
+               print("You feel a chilly breeze blow through you...")
+               ghostman = battle("Prisoner Ghost", "throw a punch", "Head", "Torso")
+               
+           else:
+               print("You decide to continue past them, and run past all the cells. After a few minutes of running, you find yourself exhausted. You also observe that you made it onto a bridge above the lava.")
+               print("Something flaps above you...")
+           if slingshot == "Yes":
+            giantbird = battle("Dragon Bird", "fire a seed", "Head", "Wings")
+           else:
+            giantbird = battle("Dragon Bird", "throw a seed", "Head", "Wings")
+           print("You've scared it off for now, but you have a feeling it'll return.")
+
+       else:
+           print("Deciding that it might be dangerous to check out what is in the cells, you run past all the cells.\nAfter a few minutes of running, you find yourself exhausted. You also observe that you made it onto a bridge above the lava.")
+           print("Something flaps above you...")
+           if slingshot == "Yes":
+            giantbird = battle("Dragon Bird", "fire a seed", "Head", "Wings")
+           else:
+            giantbird = battle("Dragon Bird", "throw a seed", "Head", "Wings")
+
+
+
+
+
+
 
 
 else:
@@ -97,3 +148,5 @@ else:
            print(dedend)
            break
    print(sneakend)
+
+
