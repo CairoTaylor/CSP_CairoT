@@ -28,3 +28,8 @@ sans serif
 monospace
 cursive
 fantasy */
+#no{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
