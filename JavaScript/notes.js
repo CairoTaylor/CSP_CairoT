@@ -27,5 +27,14 @@ function normal(){
 }
 
 function show(){
-    document.getElementById("").style.
+    document.getElementById("image").style.display
+}
+
+pop();{
+    window.alert("Genuinley don't touch it")
+}
+
+function hello(){
+    let name = window.prompt("What is your name fool")
+    document.getElementById("title").innerHTML = "hello " + name
 }
