@@ -1,0 +1,35 @@
+*{
+    background-color: antiquewhite;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+#content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#one{
+    display: flex;
+}
+#image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* generic font families
+serif
+sans serif
+monospace
+cursive
+fantasy */
+#no{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
