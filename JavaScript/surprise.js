@@ -1,3 +1,3 @@
 function show(){
-  document.getElementById("image").style.
+  document.getElementById("hover-target").style.
 }
