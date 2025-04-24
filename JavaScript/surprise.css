@@ -10,3 +10,7 @@ body{
 #sleepy{
     height: 150px;
 }
+
+#target{
+    display: none;
+}
