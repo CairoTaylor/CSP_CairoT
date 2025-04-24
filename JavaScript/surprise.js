@@ -1,3 +1,7 @@
-function show(){
-    document.getElementById("image").style.display = "block";
-}
+#image {
+    display: none;
+  }
+
+  #hover-target:hover + #image {
+    display: block;
+  }
