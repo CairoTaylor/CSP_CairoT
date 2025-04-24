@@ -47,10 +47,15 @@
       color: #4A6711;
     }
 
-    img#mobs {
+    .hover-img {
       width: 100%;
       height: auto;
       border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .hover-img:hover {
+      content: url('https://upload.wikimedia.org/wikipedia/en/e/e7/Steve_%28Minecraft%29.png');
     }
 
     dl {
@@ -70,6 +75,20 @@
     footer {
       text-align: center;
       margin: 20px;
+    }
+
+    button {
+      background-color: #4A6711;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+
+    button:hover {
+      background-color: #39510e;
     }
 
     @media (min-width: 768px) {
@@ -92,13 +111,20 @@
   <main>
     <section class="full-width">
       <h3>Why is it fun?</h3>
-      <p>
-        Minecraft is fun because of its <b>playability</b>. The playability of a game is how fun it is to keep playing the game over and over again. Minecraft has multiple options for gameplay, and within those options there are <i>"endless possibilities,"</i> as they put it.
-        <br /><br />
-        The survival mode is like real life. You must survive with what you can find and if you don't you will die, but coming back to life is allowed infinitely. The ultimate goal is to slay a dragon in another dimension, but you first have to get there.
-        <br /><br />
-        Another mode to play in is creative, which puts you in an all-powerful, god-like state. You have any resource you could ever wish for, in unlimited amounts. You can control the world exactly how you want it, and you can even <i>fly</i>!
-      </p>
+
+      <!-- Button to hide paragraph -->
+      <button onclick="hideParagraph()">More About Minecraft</button>
+
+      <!-- Paragraph wrapped in a div -->
+      <div id="funParagraph">
+        <p>
+          Minecraft is fun because of its <b>playability</b>. The playability of a game is how fun it is to keep playing the game over and over again. Minecraft has multiple options for gameplay, and within those options there are <i>"endless possibilities,"</i> as they put it.
+          <br /><br />
+          The survival mode is like real life. You must survive with what you can find and if you don't you will die, but coming back to life is allowed infinitely. The ultimate goal is to slay a dragon in another dimension, but you first have to get there.
+          <br /><br />
+          Another mode to play in is creative, which puts you in an all-powerful, god-like state. You have any resource you could ever wish for, in unlimited amounts. You can control the world exactly how you want it, and you can even <i>fly</i>!
+        </p>
+      </div>
     </section>
 
     <section>
@@ -111,7 +137,7 @@
     </section>
 
     <section>
-      <img id="mobs" src="https://static.wikia.nocookie.net/villains/images/f/fb/Hostile_Mobs_Render.png/revision/latest?cb=20250224030058" alt="A bunch of mobs from Minecraft" />
+      <img id="mobs" class="hover-img" src="https://static.wikia.nocookie.net/villains/images/f/fb/Hostile_Mobs_Render.png/revision/latest?cb=20250224030058" alt="A bunch of mobs from Minecraft" />
       <p>Here is a list of the most common mobs in Minecraft:</p>
       <dl>
         <dt>Zombies</dt>
@@ -131,9 +157,12 @@
   <footer>
     <a href="https://www.minecraft.net/en-us" target="_blank">The official Minecraft website</a>
   </footer>
+
+  <script>
+    function hideParagraph() {
+      const para = document.getElementById("funParagraph");
+      para.style.display = "none";
+    }
+  </script>
 </body>
 </html>
-<<<<<<< HEAD
-
-=======
->>>>>>> a7ddd6415c8a372e3075536323d53f1379964da2

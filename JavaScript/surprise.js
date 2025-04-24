@@ -1,7 +1,3 @@
-#image {
-    display: none;
-  }
-
-  #hover-target:hover + #image {
-    display: block;
-  }
+function show(){
+  document.getElementById("image").style.
+}
