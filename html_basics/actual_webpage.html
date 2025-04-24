@@ -1,29 +1,136 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Minecrafty</title>
-    </head>
-    <body>
-        <h1>Minecraft</h1>
-        <img src="https://cdn2.iconfinder.com/data/icons/metro-ui-icon-set/512/Minecraft.png" alt="Minecraft Logo" height="250px">
-        <h3>Why is it fun?</h3>
-        <p>Minecraft is fun becuase of its <b>playability</b>. The playability of a game is how fun it is to keep playing the game over and over again. Minecraft has muiltiple options for gameplay, and within those options there are <i>"endless possibilities,"</i> as they put it. The survival mode is like real life. You must survive with what you can find and if you don't you will die, but coming back to life is allowed infinitley. The ultimate goal is to slay a dragon in another dimesion, but you first have to get there.<br> Another mode to play in is creative, which puts you in an all powerful, god-like state. You have any resource you could ever wish for, in unlimited amounts. You can control the world exactly how you want it, and you can even <i>fly</i>!</p>
-        <h3>About the game</h3>
-        <p>Minecraft was developed by the Swedish Marcus Persson on May 17, 2009. The game was originally called Cave Game, and it was developed in <b>only 6 days!</b> However, it took many months to get any updates for the game out. Currently, there are <b>over 150 creatures</b>, <b>over 800 unique blocks</b>, and <b>over 1,600 items</b> in the game as a whole, not including hundreds of modpacks with extra entities, blocks, items, and sometimes even new, strange, or more realistic physics. Minecraft is currently in developmental stages for version <b>1.21.6</b> for Java, and most likely going to keep updating for a while.</p>
-        <img src="https://static.wikia.nocookie.net/villains/images/f/fb/Hostile_Mobs_Render.png/revision/latest?cb=20250224030058" alt="A bunch of mobs from Minecraft" height="250px">
-        <p>Here is a list of the most common mobs in Minecraft:</p>
-        <dl>
-            <dt>Zombies</dt>
-            <dd>Slow, green versions of Steve that are mostly an inconviniences.</dd>
-            <dt>Skeletons</dt>
-            <dd>Boney archers with built-in aimbot that never go away.</dd>
-            <dt>Creepers</dt>
-            <dd>Silent suicide bombers that make the world look like swiss cheese.</dd>
-            <dt>Endermen</dt>
-            <dd>Tall shadowy figures that steal blocks and dissapear.</dd>
-            <dt></dt>
-        </dl>
-        <a href="https://www.minecraft.net/en-us" target="_blank">The official Minecraft website</a>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Minecrafty</title>
+  <style>
+    body {
+      background-color: #D46A6A;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #0B4242;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #title {
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    #logo {
+      height: 150px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      background-color: #fff5f5;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    h3 {
+      color: #4A6711;
+    }
+
+    img#mobs {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    dl {
+      margin-top: 10px;
+    }
+
+    dt {
+      color: #4A6711;
+      font-weight: bold;
+    }
+
+    dd {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 20px;
+    }
+
+    @media (min-width: 768px) {
+      main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .full-width {
+        grid-column: 1 / -1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="title">Minecraft</h1>
+    <img id="logo" src="https://cdn2.iconfinder.com/data/icons/metro-ui-icon-set/512/Minecraft.png" alt="Minecraft Logo" />
+  </header>
+
+  <main>
+    <section class="full-width">
+      <h3>Why is it fun?</h3>
+      <p>
+        Minecraft is fun because of its <b>playability</b>. The playability of a game is how fun it is to keep playing the game over and over again. Minecraft has multiple options for gameplay, and within those options there are <i>"endless possibilities,"</i> as they put it.
+        <br /><br />
+        The survival mode is like real life. You must survive with what you can find and if you don't you will die, but coming back to life is allowed infinitely. The ultimate goal is to slay a dragon in another dimension, but you first have to get there.
+        <br /><br />
+        Another mode to play in is creative, which puts you in an all-powerful, god-like state. You have any resource you could ever wish for, in unlimited amounts. You can control the world exactly how you want it, and you can even <i>fly</i>!
+      </p>
+    </section>
+
+    <section>
+      <h3>About the game</h3>
+      <p>
+        Minecraft was developed by the Swedish Marcus Persson on May 17, 2009. The game was originally called Cave Game, and it was developed in <b>only 6 days!</b> However, it took many months to get any updates for the game out.
+        <br /><br />
+        Currently, there are <b>over 150 creatures</b>, <b>over 800 unique blocks</b>, and <b>over 1,600 items</b> in the game as a whole, not including hundreds of modpacks with extra entities, blocks, items, and sometimes even new, strange, or more realistic physics. Minecraft is currently in developmental stages for version <b>1.21.6</b> for Java.
+      </p>
+    </section>
+
+    <section>
+      <img id="mobs" src="https://static.wikia.nocookie.net/villains/images/f/fb/Hostile_Mobs_Render.png/revision/latest?cb=20250224030058" alt="A bunch of mobs from Minecraft" />
+      <p>Here is a list of the most common mobs in Minecraft:</p>
+      <dl>
+        <dt>Zombies</dt>
+        <dd>Slow, green versions of Steve that are mostly an inconvenience.</dd>
+        <dt>Skeletons</dt>
+        <dd>Boney archers with built-in aimbot that never go away.</dd>
+        <dt>Creepers</dt>
+        <dd>Silent suicide bombers that make the world look like swiss cheese.</dd>
+        <dt>Endermen</dt>
+        <dd>Tall shadowy figures that steal blocks and disappear.</dd>
+        <dt>Spiders</dt>
+        <dd>Australian-sized spiders that leap on you.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://www.minecraft.net/en-us" target="_blank">The official Minecraft website</a>
+  </footer>
+</body>
 </html>
+
