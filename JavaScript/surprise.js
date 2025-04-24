@@ -1,3 +1,3 @@
 function show(){
-    document.getElementById("image").style.display
+    document.getElementById("image").style.display = "block";
 }
