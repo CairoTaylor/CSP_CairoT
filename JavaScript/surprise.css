@@ -11,6 +11,10 @@ body{
     height: 150px;
 }
 
-#target{
+#image {
     display: none;
+  }
+
+#OoO{
+    color: #568B74;
 }
