@@ -1,0 +1,38 @@
+body{
+    background-color: #AA5939;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFD1AA;
+}
+
+#bigTitle{
+    text-align: center;
+}
+
+#para{
+    background-color: #FFD1AA;
+    color: #AA5939;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #611C00;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#paraTwo{
+    background-color: #FFD1AA;
+    color: #AA5939;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #611C00;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+#bryce{
+    height: 200px;
+    justify-content: center;
+}
+
