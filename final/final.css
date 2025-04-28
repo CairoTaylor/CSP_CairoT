@@ -1,6 +1,6 @@
 body{
     background-color: #AA5939;
-    font-family: "Cedarville Cursive", cursive;
+    font-family: "Tagesschrift", system-ui;
     font-weight: 400;
     font-style: normal;
     color: #FFD1AA;
@@ -28,11 +28,27 @@ body{
     border: 2px solid #611C00;
     padding: 10px;
     border-radius: 5px;
+    display: none;
 }
-
 
 #bryce{
     height: 200px;
-    justify-content: center;
+    justify-self: center;
 }
 
+#topImage{
+    width: 100%;
+    justify-self: center;
+}
+
+#winterBryce{
+    height:150px;
+    justify-self: center;
+}
+
+#firstButtons{
+    background-color: #FFD1AA;
+    color: #AA5939;
+    border: 2px solid #611C00;
+    border-radius: 5px;
+}

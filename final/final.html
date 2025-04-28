@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <title>Bryce Canyon</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Tagesschrift&display=swap" rel="stylesheet">
         <script src="final.js"></script>
         <link rel="stylesheet" href="final.css">
     </head>
     <body>
-        <h1 id="bigTitle">Bryce Canyon</h2>
+        <h1 id="bigTitle">Bryce Canyon</h1>
+        <img id="topImage" src="https://content.paulreiffer.com/wp-content/uploads/2013/08/Fine-Art-Limited-Edition-Print-Wall-Corporate-Decoration-Interior-Design-Paul-Reiffer-Photographer-Photography-High-End-Landscape-Cityscape-Buy-Rock-Of-Ages-Bryce-Canyon.jpg">
         <div id="para">
             <p>Bryce Canyon is one of the many National Parks from Utah. The red rock is carved with naturally forming hoodoo and bridge formations. It has many places to hike and look at the formations from.</p>
             <img id="bryce" src="https://images.ctfassets.net/0wjmk6wgfops/lK1gqUAYIJUwbu91mihi2/c30d1e49cb1cb6961c6e46bfb65911a0/Bryce_Canyon_Blue_sky_AdobeStock_121552392.jpeg?q=70" alt="Bryce Canyon">
@@ -22,12 +23,13 @@
                 <li>The scenery is spectacular</li>
                 <li>The hikes are good for you</li>
                 <li>Traveling into the park inexpensive</li>
-                <li></li>
+                <li>The area has good campgrounds to stay at</li>
             </ul>
         </div>
-        <button id="firstButtons" onclick="more()">More About Bryce Canyon</button>
+        <button id="firstButtons" onmouseover="highlight()" onmouseleave="normal()" onclick="more()">More About Bryce Canyon</button>
         <div id="paraTwo">
-            <p>ausyfus</p>
+            <p>Bryce Canyon was found by LDS pioneers, named after Ebenezer Bryce. It was found on February 25, 1928, making it nearly 100 years old. Technically, Bryce Canyon is not a canyon because there is no river running through it. While it looks amazing in the summer, Bryce Canyon may look even more stunning in the winter.</p>
+            <img id="winterBryce" src="https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/winter-photography/mighty-5-winter/bryce-canyon/stock-photo_sunrise-over-bryce-canyon-national-park-2_brady-paul.jpg" alt="Winter Bryce Canyon">
         </div>
     </body>
 </html>
