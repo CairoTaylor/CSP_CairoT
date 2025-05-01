@@ -1,5 +1,5 @@
 body{
-    background-image: "https://i0.wp.com/www.brycecanyoncountry.com/wp-content/uploads/winter_img_3924.webp";
+    background-image: url(https://a.travel-assets.com/findyours-php/viewfinder/images/res70/171000/171430-Bryce-Canyon-National-Park.jpg);
     font-family: "Tagesschrift", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -14,7 +14,7 @@ body{
     background-color: #FFD1AA;
     color: #AA5939;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 55px 2fr 1fr;
     border: 2px solid #611C00;
     padding: 10px;
     border-radius: 5px;
@@ -24,7 +24,7 @@ body{
     background-color: #FFD1AA;
     color: #AA5939;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 5fr;
     border: 2px solid #611C00;
     padding: 10px;
     border-radius: 5px;
@@ -34,7 +34,12 @@ body{
 }
 
 #bryce{
-    height: 200px;
+    height: 250px;
+    justify-self: center;
+}
+
+#bryceAgain{
+    height: 250px;
     justify-self: center;
 }
 
@@ -47,8 +52,8 @@ body{
 }
 
 #winterBryce{
-    justify-self: center;
-    height:300px;
+    height:500px;
+    padding: 10px;
 }
 
 #firstButtons{
@@ -70,5 +75,5 @@ body{
 #leave{
     display: grid;
     text-align: center;
-    color: #FFD1AA;
+    color: #611C00;
 }
