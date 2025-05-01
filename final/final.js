@@ -9,7 +9,7 @@ function more(){
       document.getElementById("firstButtons").innerHTML = "Less About Bryce Canyon"
   }else{
       document.getElementById("paraTwo").style.display = "none"
-      document.getElementById("firstButton").innerHTML = "More About Bryce Canyon"
+      document.getElementById("firstButtons").innerHTML = "More About Bryce Canyon"
   }
 }
 
